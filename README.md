@@ -9,10 +9,11 @@ For example, let's say we have a pie chart that initially displays the monthly e
 To achieve this functionality, follow these steps:
 
 **Step 1:** Create the MainPage class in the App.cs file and implement the OnLaunched method, as shown in the code snippet below.
+
 **[C#]**
 
 ```
-/// <summary>
+          /// <summary>
          /// Invoked when the application is launched.
          /// </summary>
          /// <param name="args">Details about the launch request and process.</param>
@@ -35,6 +36,7 @@ To achieve this functionality, follow these steps:
 
 **Step 2:** Initialize the MainPage class and set up the pie chart with the generated data. Invoke the [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSelectionBehavior.html#Syncfusion_Maui_Charts_ChartSelectionBehavior_SelectionChanged) event to handle the navigation to the new page when a segment is tapped.
 To navigate to the new page, use the [Frame.Navigate](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.frame.navigate?view=windows-app-sdk-1.3#microsoft-ui-xaml-controls-frame-navigate(windows-ui-xaml-interop-typename-system-object-microsoft-ui-xaml-media-animation-navigationtransitioninfo)) method. You can also pass a parameter object to initialize the new page with specific state information.
+
 **[Xaml]**
 ```
 <Grid>
@@ -77,6 +79,7 @@ private void DataPointSelectionBehavior_SelectionChanged(object sender, Syncfusi
 ```
 
 **Step 3:** Obtain the parameter for the new page class by overriding the **OnNavigatedTo** method. In the previous page, navigate using the **HyperlinkButton** control, as demonstrated in the code snippet below.
+
 **[Xaml]**
 ```
   <Grid>
@@ -137,4 +140,4 @@ private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
 
 **Output:**
  
- ![Drill_Down_Output.gif](https://support.syncfusion.com/kb/agent/attachment/article/13011/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc5NjgiLCJvcmdpZCI6IjMiLCJpc3MiOiJzdXBwb3J0LnN5bmNmdXNpb24uY29tIn0.ywGWjjSeyop-SsD1HNlA8dzJTflVT5qj9Sx7SFsT1x8)
+![Drill_Down_Output](https://github.com/SyncfusionExamples/How-to-use-the-drill-down-functionality-in-WinUI-Charts/assets/105482474/70da96a0-5fe3-425d-8770-f2c2f858c0ec)
