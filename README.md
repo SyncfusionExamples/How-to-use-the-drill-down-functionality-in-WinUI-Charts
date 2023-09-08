@@ -1,14 +1,16 @@
-# How-to-use-the-drill-down-functionality-in-WinUI-SfCartesianChart
+# How-to-use-the-drill-down-functionality-in-WinUI-SfCircularChart
 
-This article explains how to implement the drill-down functionality in [WinUI (SfCartesianChart)](https://help.syncfusion.com/winui/cartesian-charts/getting-started).
+This article explains how to implement the drill-down functionality in [WinUI (SfCircularChart)](https://help.syncfusion.com/winui/circular-charts/getting-started).
 
-The drill-down functionality allows users to navigate from one chart to another by tapping on a segment. In [WinUI (SfCartesianChart)](https://help.syncfusion.com/winui/cartesian-charts/getting-started), this functionality can be achieved using the [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSelectionBehavior.html#Syncfusion_Maui_Charts_ChartSelectionBehavior_SelectionChanged) event in the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property.
+The drill-down functionality allows users to navigate from one chart to another by tapping on a segment. In [WinUI (SfCircularChart)](https://help.syncfusion.com/winui/circular-charts/getting-started), this functionality can be achieved using the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanged) event in the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_SelectionBehavior) property.
+
 
 For example, let's say we have a pie chart that initially displays the monthly expenses of different individuals. When a user taps on a specific segment of the chart, it should generate a new chart that provides more detailed information.
 
 To achieve this functionality, follow these steps:
 
-**Step 1:** Create the MainPage class in the App.cs file and implement the OnLaunched method, as shown in the code snippet below.
+## Step 1: 
+Create the MainPage class in the App.cs file and implement the OnLaunched method, as shown in the code snippet below.
 
 **[C#]**
 
@@ -34,7 +36,8 @@ To achieve this functionality, follow these steps:
 
 ```
 
-**Step 2:** Initialize the MainPage class and set up the pie chart with the generated data. Invoke the [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSelectionBehavior.html#Syncfusion_Maui_Charts_ChartSelectionBehavior_SelectionChanged) event to handle the navigation to the new page when a segment is tapped.
+## Step 2: 
+Initialize the MainPage class and set up the pie chart with the generated data. Invoke the [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSelectionBehavior.html#Syncfusion_Maui_Charts_ChartSelectionBehavior_SelectionChanged) event to handle the navigation to the new page when a segment is tapped.
 To navigate to the new page, use the [Frame.Navigate](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.frame.navigate?view=windows-app-sdk-1.3#microsoft-ui-xaml-controls-frame-navigate(windows-ui-xaml-interop-typename-system-object-microsoft-ui-xaml-media-animation-navigationtransitioninfo)) method. You can also pass a parameter object to initialize the new page with specific state information.
 
 **[Xaml]**
@@ -78,7 +81,8 @@ private void DataPointSelectionBehavior_SelectionChanged(object sender, Syncfusi
 
 ```
 
-**Step 3:** Obtain the parameter for the new page class by overriding the **OnNavigatedTo** method. In the previous page, navigate using the **HyperlinkButton** control, as demonstrated in the code snippet below.
+## Step 3:
+Obtain the parameter for the new page class by overriding the **OnNavigatedTo** method. In the previous page, navigate using the **HyperlinkButton** control, as demonstrated in the code snippet below.
 
 **[Xaml]**
 ```
@@ -138,6 +142,8 @@ private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
 
 [Download the complete sample in GitHub](https://github.com/SyncfusionExamples/How-to-use-the-drill-down-functionality-in-WinUI-Charts).
 
-**Output:**
+## Output:
  
-![Drill_Down_Output](https://github.com/SyncfusionExamples/How-to-use-the-drill-down-functionality-in-WinUI-Charts/assets/105482474/70da96a0-5fe3-425d-8770-f2c2f858c0ec)
+![Drill_Down_Output](https://github.com/SyncfusionExamples/How-to-use-the-drill-down-functionality-in-WinUI-Charts/assets/105482474/21c5a8f4-a581-49c4-869e-30cabf3822ad)
+
+
