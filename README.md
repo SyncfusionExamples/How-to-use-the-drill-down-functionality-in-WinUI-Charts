@@ -137,6 +137,7 @@ private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
 
             base.OnNavigatedTo(e);
         }
+```
 
 ## Output:
  
