@@ -8,15 +8,15 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="1e81a2a7-e257-4167-adfd-54d33124da03"
-    Publisher="CN=NanthiniMahalingam"
+    Name="62136d42-8c39-4107-b364-792d6d897a8c"
+    Publisher="CN=HarshaMidadh_xkvon6h"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="1e81a2a7-e257-4167-adfd-54d33124da03" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="62136d42-8c39-4107-b364-792d6d897a8c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Drill_Down_Sample</DisplayName>
-    <PublisherDisplayName>NanthiniMahalingam</PublisherDisplayName>
+    <PublisherDisplayName>HarshaMidadh_xkvon6h</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
