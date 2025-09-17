@@ -12,7 +12,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using static System.Net.WebRequestMethods;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -24,23 +23,16 @@ namespace Drill_Down_Sample
     /// </summary>
     public sealed partial class NewPage : Page
     {
-      
         public NewPage()
         {
             this.InitializeComponent();
         }
-
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(MainPage));
-        }
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter is object)
             {
                 List<object> item = (List<object>)e.Parameter;
-                DataContext =  item[0];
+                DataContext = item[0];
                 Model model = DataContext as Model;
                 chart.Header = "Monthly Expense Of " + model.Type.ToString();
                 series.Fill = (Brush)item[1];
@@ -48,5 +40,10 @@ namespace Drill_Down_Sample
 
             base.OnNavigatedTo(e);
         }
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
     }
 }

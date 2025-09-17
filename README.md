@@ -137,13 +137,11 @@ private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
 
             base.OnNavigatedTo(e);
         }
-
 ```
-
-[Download the complete sample in GitHub](https://github.com/SyncfusionExamples/How-to-use-the-drill-down-functionality-in-WinUI-Charts).
 
 ## Output:
  
 ![Drill_Down_Output](https://github.com/SyncfusionExamples/How-to-use-the-drill-down-functionality-in-WinUI-Charts/assets/105482474/21c5a8f4-a581-49c4-869e-30cabf3822ad)
 
+KB link - [How to use the drill down functionality in winui charts](https://support.syncfusion.com/kb/article/13011/how-to-use-the-drill-down-functionality-in-winui-chart-sfcircularchart).
 
